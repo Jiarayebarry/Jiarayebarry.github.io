@@ -1,61 +1,82 @@
-body {
-    
-    
-    width: 725px;
-    background-color: Pink;
-    margin: 10px auto;
-    } 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle Shop</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slicknav/1.0.10/jquery.slicknav.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: pink;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background: pink;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
 
-main {
-    width: 50%; 
-    height: 500px;
-    background-color: #ffffff; 
-    float: left; }
+<header>
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rental</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-aside {
-    width: 50%;
-    height: 500px;
-    background-color: #ffffff; 
-    float: right; }
-h1, h2 {
-   
-    padding: 10px;
-  
-} 
-p { 
+<main>
+    <h1>Welcome to the Bicycle Shop!</h1>
+    <p>Explore our range of bicycles, rental options, and services.</p>
+</main>
 
-    padding-left: 5px;
-    padding-right: 5px;
-}
+<footer>
+    <p>&copy; 2025 Bicycle Shop. All rights reserved.</p>
+</footer>
 
-footer { 
-    clear: both; 
-     }
-    
-ul { 
-    
-    padding-left: 10px; } 
+<script>
+    $(document).ready(function(){
+        $('#menu').slicknav({
+            label: '',
+            prependTo: 'header'
+        });
+    });
+</script>
 
-li {
-    padding-left: 10px; /* space between bullet and text */ 
-   
-} 
- 
-/* Special main image on index page with blue border and rounded corner- must have .bluetouch div class */ 
-.bluetouch img {
-    border: 2px solid #B5D3E7;
-    margin: 0;
-    padding: 0;
-    border-radius: 1000px;
-    -moz-border-radius: 1000px;
-    position: relative;
-    right: 10px; 
-    top: 10px; 
-}
-
-/* basic images where blue borders are not required */ 
-img {
-    position: static;
-}
-    
+</body>
+</html>
     
